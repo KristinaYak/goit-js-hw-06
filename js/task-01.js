@@ -11,12 +11,12 @@ const listItem = document.querySelectorAll('li.item');
 console.log(`Number of categories: ${listItem.length}`);
 
 
-const ul = document.querySelectorAll('#categories>li');
+const ulCategory = document.querySelectorAll('#categories>li');
 
-ul.forEach(el => {
+ulCategory.forEach(el => {
 
   console.log(
     `Category: ${el.firstElementChild.textContent}, 
-    Elements:  ${el.lastElementChild.children.length}`,
+    Elements: ${el.lastElementChild.children.length}`,
   );
 });

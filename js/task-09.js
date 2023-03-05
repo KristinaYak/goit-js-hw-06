@@ -23,10 +23,11 @@ function getRandomHexColor() {
 
 const TextColor = document.querySelector('.color');
 const changeColorBtn = document.querySelector('.change-color');
-const body = document.querySelector('body');
+const body = document.querySelector('#widget');
 
-changeColorBtn.addEventListener('click', () => {
+const changeColor = () => {
   body.style.backgroundColor = getRandomHexColor();
-  TextColor.textContent = body.style.backgroundColor;
-});
+  TextColor.textContent = getRandomHexColor();
+};
 
+changeColorBtn.addEventListener('click', changeColor);
