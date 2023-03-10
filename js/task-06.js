@@ -30,12 +30,12 @@
 const validInput = document.querySelector("#validation-input");
 const dataLength = Number(validInput.dataset.length);
 const ChangeColor = (event) => {
-    if (event.text.length === dataLength) {
+    if (event.currentTarget.value.length === dataLength) {
         validInput.classList.add('valid');
-        validInput.classList.remove('invaild');
+        validInput.classList.remove('invalid');
     } else {
         validInput.classList.remove('vaild');
-        validInput.classList.add('invaild'); 
+        validInput.classList.add('invalid'); 
     }
 
 };

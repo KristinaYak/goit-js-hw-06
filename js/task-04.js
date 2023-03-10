@@ -20,15 +20,15 @@ console.log(AddInBtn);
 
 
 
-const TotalNumber = document.querySelector('value');
+const TotalNumber = document.querySelector('#value');
 let counterValue = 0;
 
-const onClickAddDecBtn = (event) => {
+function onClickAddDecBtn (event) {
     counterValue -=1;
     TotalNumber.textContent = counterValue;
 };
 
-const onClickAddInBtn = (event) => {
+function onClickAddInBtn (event) {
     counterValue +=1;
     TotalNumber.textContent = counterValue;
 }
