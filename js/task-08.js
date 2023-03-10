@@ -35,7 +35,7 @@ function handleSubmit(event) {
         alert('Please fill in all the fields');
     } 
         
-console.log(`email: ${email.value}, password: ${password.value}`);
+console.log([`email: ${email.value}, password: ${password.value}`]);
     event.currentTarget.reset();
     
 }
